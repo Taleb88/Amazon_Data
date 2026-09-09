@@ -83,13 +83,13 @@ main_category = [
 
 for value in main_category:
     try:
-        def main_category(df):
+        def main_category_func(df):
             try:
                 return df[df['main_category'] == {value}]
             except Exception as e:
                 print(f'error - cannot filter accordingly {type(e)}')
 
-        main_category_df = main_category(df)
+        main_category_df = main_category_func(df)
         main_category_df.to_csv(f'csvs_created/{value}.csv',index=None)
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
