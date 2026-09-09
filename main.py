@@ -91,5 +91,6 @@ for value in main_category:
 
         main_category_df = main_category_func(df)
         main_category_df.to_csv(f'csvs_created/{value}.csv',index=None)
+        print(f'{value}.csv was created')
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
