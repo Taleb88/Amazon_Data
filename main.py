@@ -88,8 +88,8 @@ for value in main_category:
                 return df[df[main_category] == {value}]
             except Exception as e:
                 print(f'error - cannot filter accordingly {type(e)}')
+
+        main_category_df = main_category(df)
+        main_category_df.to_csv(f'csvs_created/{value}.csv',index=None)
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
-
-main_category_df = main_category(df)
-main_category_df.to_csv('csvs_created/main_category.csv',index=None)
