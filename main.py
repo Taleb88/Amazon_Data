@@ -42,3 +42,51 @@ print('data_source unique values: ', df['data_source'].unique())
 print('source_is_actual unique values: ', df['source_is_actual'].unique())
 
 # create + save multiple csvs
+main_category = [
+    'All Beauty',
+    'Musical Instruments',
+    'Industrial & Scientific',
+    'Automotive',
+    'Premium Beauty',
+    'AMAZON FASHION',
+    'Health & Personal Care',
+    'Amazon Home',
+    'Beauty & Personal Care',
+    'Tools & Home Improvement',
+    'Pet Supplies',
+    'Grocery',
+    'All Electronics',
+    'Toys & Games',
+    'Cell Phones & Accessories',
+    'Sports & Outdoors',
+    'Arts, Crafts & Sewing',
+    'Office Products',
+    'Appliances',
+    'Baby',
+    'Computers',
+    'Handmade',
+    'Camera & Photo',
+    'Home Audio & Theater',
+    'Amazon Devices',
+    'Digital Music',
+    'Books',
+    'Buy a Kindle',
+    'Movies & TV',
+    'GPS & Navigation',
+    'Car Electronics',
+    'Video Games',
+    'Software',
+    'Collectible Coins',
+    'Portable Audio & Accessories',
+    'Entertainment'
+]
+
+for x in main_category:
+    try:
+        def main_category(df):
+            try
+
+            except Exception as e:
+                print(f'error - cannot filter accordingly {type(e)}')
+    except Exception as e:
+       print(f'error - cannot create new dfs at this time {type(e)}')
