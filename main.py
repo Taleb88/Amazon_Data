@@ -92,4 +92,4 @@ for value in main_category:
        print(f'error - cannot create new dfs at this time {type(e)}')
 
 main_category_df = main_category(df)
-main_category_df.to_csv('main_category.csv',index=None)
+main_category_df.to_csv('csvs_created/main_category.csv',index=None)
