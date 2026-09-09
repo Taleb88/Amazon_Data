@@ -41,7 +41,7 @@ print('dataset_category unique values: ', df['dataset_category'].unique())
 print('data_source unique values: ', df['data_source'].unique())
 print('source_is_actual unique values: ', df['source_is_actual'].unique())
 
-# create + save multiple csvs
+# create + save multiple csvs - in progress
 main_category = [
     'All Beauty',
     'Musical Instruments',
