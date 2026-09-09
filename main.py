@@ -81,11 +81,11 @@ main_category = [
     'Entertainment'
 ]
 
-for x in main_category:
+for value in main_category:
     try:
         def main_category(df):
-            try
-
+            try:
+                return df[df[main_category] == {value}]
             except Exception as e:
                 print(f'error - cannot filter accordingly {type(e)}')
     except Exception as e:
