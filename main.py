@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 df = pd.read_csv('raw_file/amazon_reviews_actual_5_5m.csv')
 
@@ -94,3 +95,7 @@ for value in main_category:
         print(f'{value}.csv was created')
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
+
+
+
+os.remove('csvs_created/All Beauty.csv')
