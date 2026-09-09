@@ -85,7 +85,7 @@ for value in main_category:
     try:
         def main_category_func(df):
             try:
-                return df[df['main_category'] == {value}]
+                return df[df['main_category'] == value]
             except Exception as e:
                 print(f'error - cannot filter accordingly {type(e)}')
 
