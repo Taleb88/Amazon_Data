@@ -101,5 +101,19 @@ all_beauty_df_1 = df[:500000]
 all_beauty_df_1.to_csv('csvs_created/ All Beauty 1.csv')
 all_beauty_df_2 = df[500001:1000000]
 all_beauty_df_2.to_csv('csvs_created/ All Beauty 2.csv')
+all_beauty_df_3 = df[1000001:1500000]
+all_beauty_df_3.to_csv('csvs_created/ All Beauty 3.csv')
+all_beauty_df_4 = df[1500001:2000000]
+all_beauty_df_4.to_csv('csvs_created/ All Beauty 4.csv')
+all_beauty_df_5 = df[2000001:2500000]
+all_beauty_df_5.to_csv('csvs_created/ All Beauty 5.csv')
+all_beauty_df_6 = df[2500001:3000000]
+all_beauty_df_6.to_csv('csvs_created/ All Beauty 6.csv')
+all_beauty_df_7 = df[3000001:3500000]
+all_beauty_df_7.to_csv('csvs_created/ All Beauty 7.csv')
+all_beauty_df_8 = df[3500001:4000000]
+all_beauty_df_8.to_csv('csvs_created/ All Beauty 8.csv')
+all_beauty_df_9 = df[4000001:]
+all_beauty_df_8.to_csv('csvs_created/ All Beauty 9.csv')
 
 os.remove('csvs_created/All Beauty.csv')
