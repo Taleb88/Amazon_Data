@@ -97,5 +97,7 @@ for value in main_category:
        print(f'error - cannot create new dfs at this time {type(e)}')
 
 
+all_beauty_df_1 = df[:500000]
+all_beauty_df_1.to_csv('csvs_created/ All Beauty 1.csv')
 
 os.remove('csvs_created/All Beauty.csv')
