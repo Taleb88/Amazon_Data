@@ -99,5 +99,7 @@ for value in main_category:
 
 all_beauty_df_1 = df[:500000]
 all_beauty_df_1.to_csv('csvs_created/ All Beauty 1.csv')
+all_beauty_df_2 = df[500001:1000000]
+all_beauty_df_2.to_csv('csvs_created/ All Beauty 2.csv')
 
 os.remove('csvs_created/All Beauty.csv')
