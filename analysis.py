@@ -2,8 +2,7 @@ import pandas as pd
 
 df = pd.read_csv('csvs_created/All Beauty 1.csv')
 
-df_1 = df[:500000]
+print(df.head(20))
 
-# print(df_1)
-
-# df_1.to_csv('test.csv')
+test = df.head(30)
+test.to_csv('test.csv', index=False)
