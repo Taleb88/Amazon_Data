@@ -95,8 +95,9 @@ for value in main_category:
         new_csvs = main_category_df
         new_csvs.pivot_table(index='product_id', columns='review_score', values='product_rating_count', aggfunc='mean')
 
-        pivot_table = 
         print(f'{value}.csv was created')
+        print(f'\n{value} pivot table was created\n')
+
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
 
