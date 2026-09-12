@@ -42,7 +42,7 @@ print('dataset_category unique values: ', df['dataset_category'].unique())
 print('data_source unique values: ', df['data_source'].unique())
 print('source_is_actual unique values: ', df['source_is_actual'].unique())
 
-# create + save multiple csvs - in progress
+# create + save multiple csvs
 main_category = [
     'All Beauty',
     'Musical Instruments',
@@ -93,11 +93,11 @@ for value in main_category:
         main_category_df = main_category_func(df)
         main_category_df.to_csv(f'csvs_created/{value}.csv',index=None)
         
-        new_pivot_table = main_category_df.pivot_table(index='product_id', columns='review_score', values='product_rating_count', aggfunc='mean')
-        new_pivot_table.to_csv(f'pivot_tables/{value}_pivot_table.csv')
+        reviews_pivot_table = main_category_df.pivot_table(index='product_id', columns='review_score', values='product_rating_count', aggfunc='mean')
+        reviews_pivot_table.to_csv(f'pivot_tables/{value}_reviews_pivot_table.csv')
 
         print(f'{value}.csv was created')
-        print(f'\n{value} pivot table was created\n')
+        print(f'\n{value}_reviews_pivot_table.csv was created\n')
 
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
