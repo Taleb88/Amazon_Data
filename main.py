@@ -92,6 +92,10 @@ for value in main_category:
 
         main_category_df = main_category_func(df)
         main_category_df.to_csv(f'csvs_created/{value}.csv',index=None)
+        new_csvs = main_category_df
+        new_csvs.pivot_table(index='product_id', columns='review_score', values='product_rating_count', aggfunc='mean')
+
+        pivot_table = 
         print(f'{value}.csv was created')
     except Exception as e:
        print(f'error - cannot create new dfs at this time {type(e)}')
@@ -117,3 +121,4 @@ all_beauty_df_9 = df[4000001:]
 all_beauty_df_8.to_csv('csvs_created/All Beauty 9.csv', index=False)
 
 os.remove('csvs_created/All Beauty.csv')
+
