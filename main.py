@@ -92,8 +92,9 @@ for value in main_category:
 
         main_category_df = main_category_func(df)
         main_category_df.to_csv(f'csvs_created/{value}.csv',index=None)
-        new_csvs = main_category_df
-        new_csvs.pivot_table(index='product_id', columns='review_score', values='product_rating_count', aggfunc='mean')
+        
+        new_pivot_table = main_category_df.pivot_table(index='product_id', columns='review_score', values='product_rating_count', aggfunc='mean')
+        new_pivot_table.to_csv(f'csvs_created/{value}_pivot_table.csv')
 
         print(f'{value}.csv was created')
         print(f'\n{value} pivot table was created\n')
