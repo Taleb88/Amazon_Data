@@ -121,4 +121,3 @@ all_beauty_df_9 = df[4000001:]
 all_beauty_df_8.to_csv('csvs_created/All Beauty 9.csv', index=False)
 
 os.remove('csvs_created/All Beauty.csv')
-
