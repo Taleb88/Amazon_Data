@@ -120,6 +120,6 @@ all_beauty_df_7.to_csv('csvs_created/All Beauty 7.csv', index=False)
 all_beauty_df_8 = df[3500001:4000000]
 all_beauty_df_8.to_csv('csvs_created/All Beauty 8.csv', index=False)
 all_beauty_df_9 = df[4000001:]
-all_beauty_df_8.to_csv('csvs_created/All Beauty 9.csv', index=False)
+all_beauty_df_9.to_csv('csvs_created/All Beauty 9.csv', index=False)
 
 os.remove('csvs_created/All Beauty.csv')
